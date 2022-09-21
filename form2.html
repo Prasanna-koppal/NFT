@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <style>
+       body, html {
+  height:100% ;
+  margin: 0;
+}
+.container{
+    text-align:left;
+    margin: 0px;
+    max-width: 350px;
+    padding: 15px;
+    background-color: white;
+  margin-bottom: auto;
+}
+.btn {
+  background-color: #04AA6D;
+  font-size: 20px;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+.btn:hover {
+  background-color: #0fd88e;
+  color: #f1f1f1;
+  opacity: 1;
+}
+
+input[type=text], input[type=password], input[type=number],input[type=date],input[type=email],input[type=dob]{
+  width: 95%;
+  padding: 8px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=number]:focus,input[type=date]:focus,input[type=email]:focus,[type=dob]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.bg {
+  
+  background-image: url("images/61fdc5db62044cc2b17606a5_webflow-tutorial-onectus.jpeg");
+
+ 
+  height: 100%; 
+
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h1{
+    text-align: center;
+}
+  
+    </style>
+</head>
+
+<body><center>
+    <div  class="bg">
+    <form action="/action_page.php" class="container">
+        <u><h1>Create Account</h1></u>
+        <label=" FName"><b>First name:</b></label>
+        <input type="text" id="FName" name="First name"placeholder="Enter Your FName" required><br>
+      
+        <label=" LName"><b>Last name:</b></label>
+        <input type="text"id="LName" name="Last name" placeholder="Enter Your LName" required><br>
+    
+        <label=" dob"><b>DOB:</b></label>
+        <input type="dob"id="dob" name="DOB" placeholder="Enter Your DOB" required><br>
+    
+        <label= " Mob No "><b>Mobile No:</b></label>
+        <input type="number" id="Mob No" name="Mobile No" placeholder="Enter Your Phone No" required>
+   
+        <label for=" Date"><b>Date:</b></label>
+        <input type="date" id="Date" name="Date" placeholder="Enter Date" required><br>
+
+        <label="email"><b>email:</b></label>
+        <input type="email" id="email" name="email" placeholder="Enter email" required><br>
+        <label=" Pwd"><b>Password:</b></label>
+        <input type="password" id="pwd" name="pwd" placeholder="Enter Password" required><br>
+
+    <button type="submit"  class="btn">Sign in</button>
+
+
+    </form>
+</div>
+    </center>
+</body>
+</html>
